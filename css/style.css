@@ -483,10 +483,22 @@ footer .copyright {
 		text-align: center;
 	}
 	.sSlider div > p {
-		margin: 20px 0px 20px;
+		margin: 20px 0px 25px;
 		text-align: center;
+		font-size: 2em;
+	}
+	.title-slide a {
+		font-size: 1.8em;
 	}
 	.header-links .facebook, .header-links .instagram, .header-links .twitter {
 		display: none;
+	}
+}
+@media screen and (max-width: 660px) {
+	.border-slide {
+		display: none !important;
+	}
+	.header-section {
+		padding: 0 !important;
 	}
 }

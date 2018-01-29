@@ -25,10 +25,6 @@
 	font-family: GothamProItalic;
 	src: url('../fonts/GothamProItalic.ttf') format('truetype');
 }
-@font-face {
-	font-family: Consola;
-	src: url('../fonts/consola.ttf') format('truetype');
-}
 header {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -354,8 +350,11 @@ footer .copyright {
 	text-decoration: none;
 	color: #000;
 	font-size: 16px;
-	font-family: 'Consola', sans-serif;
+	font-family: 'GothamProBold', sans-serif;
 	font-weight: bold;
+}
+#main-menu span {
+	font-family: 'GothamPro', sans-serif;
 }
 #main-menu li {
 	margin: 0 0 0 45%;

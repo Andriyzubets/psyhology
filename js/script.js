@@ -26,7 +26,7 @@ $('#fullpage').fullpage({
   afterLoad: function(anchorLink, index) {
     $header_top.css('background', 'transparent');
     $nav.css('background', 'rgba(0, 47, 77, .25)');
-    if (index == 5) {
+    if (index == 7) {
         $('#fp-nav').hide();
       }
   },

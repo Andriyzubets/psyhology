@@ -136,7 +136,7 @@ header {
 	font-weight: 800;
 }
 .page-two {
-	/*padding: 10% 0 0 0;*/
+	background: transparent !important;
 }
 .page-two .content, .business .content, .individual .content, .friend .content, footer .content {
 	max-width: 1200px;
@@ -472,6 +472,53 @@ footer, footer >div {
 		height: 20vw !important;
 		margin: 0 !important;
 	}
+div.parallax {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+div.parall {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../img/sheet.png) no-repeat;
+	z-index: -1;
+	left: 0;
+}
+div.left-sheet {
+	background-size: 60%;
+    background-position-x: -50%;
+}
+div.right-sheet {
+    background-size: 53%;
+    background-position-y: 300%;
+    background-position-x: 170%;
+}
+.scene  {
+	position: absolute;
+	    top: 10%;
+    left: 20%;
+    z-index: -1;
+}
+.scene--left  {
+	width: 100vmin;
+	height: 100vmin;
+	transform: translate3d(-50vmin,0,0);
+}
+.scene--full  {
+	width: 100%;
+	height: 100vh;
+}
+.scene--up  {
+	height: 150vmin;
+	width: 150vmin;
+	top: -50vh;
+	left: 50%;
+	margin-left: -75vmin;
+}
 @media screen and (max-width: 1500px) {
 	.fp-section.fp-table, .fp-slide.fp-table {
 		width: 80%;

@@ -357,7 +357,7 @@ footer .copyright {
 	font-family: 'GothamPro', sans-serif;
 }
 #main-menu li {
-	margin: 0 0 0 45%;
+	margin: 0 0 1.5% 45%;
 }
 #main-menu .title {
 	margin: 80px 0 0 10%;
@@ -365,3 +365,20 @@ footer .copyright {
 	font-size: 144px;
 	font-family: 'GothamProBold', sans-serif;
 } 
+.menu-social {
+	display: flex;
+	justify-content: space-between;
+	width: 10%;
+}
+.menu-social .facebook {
+	background: url(../img/facebook-light.png) 50% no-repeat;
+}
+.menu-social .instagram {
+	background: url(../img/instagram-light.png) 50% no-repeat;
+}
+.menu-social .youtube {
+	background: url(../img/youtube-light.png) 50% no-repeat;
+	width: 27px;
+	height: 30px;
+	display: block;
+}

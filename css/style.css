@@ -79,8 +79,14 @@ header {
 .sandwich div:nth-child(2n) {
 	margin: 0 0 9px 19px;
 }
-.sandwich:hover div {
-	margin: 0 0 9px 0;
+ .sandwich:focus div:nth-child(2n) {
+	display: none;
+}
+ .sandwich:focus div:first-child {
+	transform: rotate(45deg) translateY(10px) translateX(10px);
+}
+ .sandwich:focus div:last-child {
+	transform: rotate(-45deg) translateX(-2px) translateY(2px);
 }
 .header-section {
 	max-width: 1215px;
@@ -484,6 +490,9 @@ footer .copyright {
 	.header-section {
 		padding: 50px 0 0 !important;
 	}
+	.header-section h2 {
+		font-size: 36px;
+	}
 	.border-slide {
 		width: 40%;
 	}
@@ -495,7 +504,7 @@ footer .copyright {
 	.sSlider div > p {
 		margin: 20px 0px 25px;
 		text-align: center;
-		font-size: 2em;
+		font-size: 1.3em;
 	}
 	.title-slide a {
 		font-size: 1.8em;
@@ -515,6 +524,9 @@ footer .copyright {
 	}
 	#main-menu li.menu-social {
 		width: 35%;
+	}
+	.prgBar {
+		display: none !important;
 	}
 }
 @media screen and (max-width: 660px) {
@@ -547,10 +559,19 @@ footer .copyright {
 	#main-menu .title {
 		font-size: 35px;
 	}
+	#main-menu li {
+		height: 1.7em;
+	}
 	#main-menu li.menu-social {
 		align-items: center;
 		height: 46%;
 		width: 80%;
 		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 480px) {
+	#main-menu li {
+		width: 80%;
+		margin: 2% 0 2.5% 15%;
 	}
 }

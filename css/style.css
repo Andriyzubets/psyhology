@@ -219,8 +219,8 @@ header {
 }
 .individual .photo {
 	margin: 0 0 0 40px;
-	width: 433px;
-	height: 547px;
+    width: 37%;
+    height: 31rem;
 	background: url(../img/psy-blur.jpg) no-repeat;
 	background-size: cover;
 }
@@ -251,7 +251,7 @@ a.hashtag {
 	margin: 65px 0 70px 10px;
 }
 .friend {
-	padding: 5% 0 0;
+	padding: 2% 0 0;
 }
 .friend h4{
 	color: #565656;
@@ -276,6 +276,7 @@ footer {
 	background: #262626;
 	padding: 67px 0 72px;
 	margin: 3% 0 0 0;
+	/*height: 80vw;*/
 }
 footer .content {
 	display: flex;
@@ -285,7 +286,7 @@ footer .content {
 	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
-	margin: 0;
+	margin: 0 auto;
 }
 footer .contacts, footer .feedback {
 	width: 48%;
@@ -466,9 +467,15 @@ footer .copyright {
 	height: 30px;
 	display: block;
 }
+footer, footer >div {
+		width: 100% !important;
+		height: 20vw !important;
+		margin: 0 !important;
+	}
 @media screen and (max-width: 1500px) {
 	.fp-section.fp-table, .fp-slide.fp-table {
 		width: 80%;
+		margin: 0 auto;
 	}
 	.header-section h2 {
 		font-size: 50px;
@@ -479,6 +486,18 @@ footer .copyright {
 	}
 	#main-menu .title {
 		font-size: 100px;
+	}
+	.individual .content {
+	    margin: 10% 0 0;
+	}
+	footer, footer >div {
+		width: 100% !important;
+		height: 40vw !important;
+		margin: 15vw 0 0 !important;
+	}
+	footer .content {
+		width: 90%;
+		margin: 0 auto;
 	}
 }
 @media screen and (max-width: 1024px) {
@@ -528,6 +547,27 @@ footer .copyright {
 	.prgBar {
 		display: none !important;
 	}
+	.business .content {
+		margin: 40% auto 0;
+		    word-break: break-word;
+
+	}
+	.business p {
+		margin: 50px 0 40px;
+	}
+	.individual .photo {
+		display: none;
+	}
+	.individual .title {
+		width: 100%;
+	}
+	.individual p {
+		margin: 25px 0 20px;
+	}
+	.individual h3 {
+		
+		font-size: 36px;
+	}
 }
 @media screen and (max-width: 660px) {
 	.border-slide {
@@ -567,6 +607,45 @@ footer .copyright {
 		height: 46%;
 		width: 80%;
 		margin: 0 auto;
+	}
+	.page-two .content, .business .content, .individual .content, .friend .content, footer .content {
+		margin: 40% auto 0;
+	}
+	.page-two h3 {
+		font-size: 36px;
+	}
+	.small-text {
+		margin: 10px 0 12px;
+	}
+	.business p {
+		width: 100%;
+		text-align: center;
+	}
+	.individual .content {
+		margin: 50% 0 0;
+	}
+	.individual h3 {
+		margin: 10% 0 0;
+	}
+	.individual a {
+		margin: 0;
+	}
+	footer .content {
+		flex-direction: column;
+	}
+	footer h3 {
+		font-size: 36px;
+		margin: 0 0 20px;
+	}
+	footer .contacts, footer .feedback {
+		width: 95%;
+		margin: 0 auto;
+	}
+	footer .feedback h4 {
+		margin: 0 0 20px;
+	}
+	footer .copyright {
+		margin: 25px 0 0 0;
 	}
 }
 @media screen and (max-width: 480px) {

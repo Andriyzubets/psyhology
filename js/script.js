@@ -14,13 +14,13 @@ var $nav = $('nav');
 
 // fullpage customization
 $('#fullpage').fullpage({
-  sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
+  sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#262626'],
   sectionSelector: '.vertical-scrolling',
   slideSelector: '.horizontal-scrolling',
   navigation: true,
   slidesNavigation: true,
   controlArrows: false,
-  anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
+  anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixSection'],
   menu: '#menu',
 
   afterLoad: function(anchorLink, index) {
@@ -32,7 +32,7 @@ $('#fullpage').fullpage({
   },
 
   onLeave: function(index, nextIndex, direction) {
-    if(index == 5) {
+    if(index == 6) {
       $('#fp-nav').show();
     }
   },

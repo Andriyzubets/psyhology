@@ -91,7 +91,7 @@ header {
 .border-slide {
 	display: flex !important;
 	width: 45%;
-	height: 30vw;
+	height: 30rem;
 	align-items: flex-end;
 	border: 5px solid #dcdcdc;
 }
@@ -460,6 +460,9 @@ footer .copyright {
 	.header-section h2 {
 		font-size: 50px;
 		word-break: break-word;
+	}
+	.border-slide {
+		height: 30vw;
 	}
 }
 @media screen and (max-width: 1024px) {

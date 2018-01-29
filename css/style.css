@@ -343,22 +343,47 @@ footer .copyright {
     width: 80%;
     height: 40vw;
     left: 10%;
-    background: #b7b7b7;
+    background: #fff;
     box-shadow: 5px 5px 60px #ff93af;
 }
 #main-menu a {
 	text-decoration: none;
-	color: #000;
+	color: #b7b7b7;
 	font-size: 16px;
 	font-family: 'GothamProBold', sans-serif;
 	font-weight: bold;
+	transition: color 0.5s;
+	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
+#main-menu a::before {
+	content: "";
+	width: 275px;
+	position: absolute;
+	height: 5px;
+	top: -6px;
+	background: #febdc8;
+	z-index: -1;
 }
 #main-menu span {
 	font-family: 'GothamPro', sans-serif;
+	letter-spacing: 0.05em;
+	transform: translate3d(-0.5em,0,0);
+	transition: transform 0.5s, color 0.5s;
+	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
+#main-menu span::before {
+	content: "";
+	width: 275px;
+	position: absolute;
+	height: 5px;
+	top: -6px;
+	background: #febdc8;
+	z-index: -1;
 }
 #main-menu li {
 	margin: 0 0 1.5% 45%;
 }
+
 #main-menu .title {
 	margin: 80px 0 0 10%;
 	color: #7d7d7d;

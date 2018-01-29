@@ -24,10 +24,55 @@
 				<a href="" class="twitter"></a>
 			</li>
 			<li>
-				<a id="menu" href="" class="sandwich">
+				<a id="menu" href="" class="sandwich" onclick="openbox('main-menu'); return false">
 					<div></div>
 					<div></div>
 					<div></div>
+					<ul id="main-menu">
+						<li class="title">
+							МЕНЮ
+						</li>
+						<li>
+							<a href="">
+								Artists <span>Explore all artists' portfolios</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Exhibitions <span>Discover their stories</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Schedule <span>View our event calendar</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Mission <span>Read our mission statement</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								The Gardens <span>Get to know our eco village</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Buy Tickets <span>Purchase event tickets online</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Contact <span>Get in touch and find us</span>
+							</a>
+						</li>
+						<li class="menu-social">
+							<a href="" class="instagram"></a>
+							<a href="" class="facebook"></a>
+							<a href="" class="youtube"></a>
+						</li>
+					</ul>
 				</a>
 			</li>
 		</ul>
@@ -173,7 +218,18 @@
 	<script src="js/jQuery.sSlider.min.js"></script>
 	<script src="js/jquery.fullpage.js"></script>
 	<script src="js/script.js"></script>
+	<script type="text/javascript">
 
+		function openbox(id){
+			display = document.getElementById(id).style.display;
+
+			if(display=='none'){
+				document.getElementById(id).style.display='block';
+			}else{
+				document.getElementById(id).style.display='none';
+			}
+		}
+	</script>
 	<script>
 		$(document).ready(function(){
 			$('#mySlider').sSlider({

@@ -25,6 +25,10 @@
 	font-family: GothamProItalic;
 	src: url('../fonts/GothamProItalic.ttf') format('truetype');
 }
+@font-face {
+	font-family: Consola;
+	src: url('../fonts/consola.ttf') format('truetype');
+}
 header {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -337,3 +341,28 @@ footer .copyright {
 #fp-nav {
 	left: 2%;
 }
+#main-menu {
+	/*display: none;*/
+    position: absolute;
+    width: 80%;
+    height: 40vw;
+    left: 10%;
+    background: #fff;
+    box-shadow: 5px 5px 60px #ff93af;
+}
+#main-menu a {
+	text-decoration: none;
+	color: #000;
+	font-size: 16px;
+	font-family: 'Consola', sans-serif;
+	font-weight: bold;
+}
+#main-menu li {
+	margin: 0 0 0 45%;
+}
+#main-menu .title {
+	margin: 80px 0 0 10%;
+	color: #7d7d7d;
+	font-size: 144px;
+	font-family: 'GothamProBold', sans-serif;
+} 

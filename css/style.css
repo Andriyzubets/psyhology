@@ -86,7 +86,7 @@ header {
 	max-width: 1215px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 200px 0 0 0;
+	padding: 135px 0 0 0;
 }
 .border-slide {
 	display: block !important;
@@ -129,7 +129,7 @@ header {
 	font-weight: 800;
 }
 .page-two {
-	padding: 10% 0 0 0;
+	/*padding: 10% 0 0 0;*/
 }
 .page-two .content, .business .content, .individual .content, .friend .content, footer .content {
 	max-width: 1200px;
@@ -177,7 +177,7 @@ header {
 }
 .business, .individual, .friend, footer {
 	margin: 100px 0 0 0;
-	padding: 118px 0 130px;
+	/*padding: 118px 0 130px;*/
 }
 .business .content {
 	display: flex;
@@ -243,6 +243,9 @@ a.hashtag {
 	font-size: 18px;
 	margin: 65px 0 70px 10px;
 }
+.friend > .content {
+    margin: 5% auto 0;
+}
 .friend h4{
 	color: #565656;
 	font-family: 'GothamProLight', sans-serif;
@@ -265,6 +268,7 @@ a.hashtag {
 footer {
 	background: #262626;
 	padding: 67px 0 72px;
+	margin: 3% 0 0 0;
 }
 footer .content {
 	display: flex;
@@ -274,6 +278,7 @@ footer .content {
 	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
+	margin: 0;
 }
 footer .contacts, footer .feedback {
 	width: 48%;
@@ -328,4 +333,7 @@ footer .copyright {
 	color: #a8a8a8;
 	font-size: 18px;
 	width: 100%;
+}
+#fp-nav {
+	left: 2%;
 }

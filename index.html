@@ -6,11 +6,12 @@
 	<title>Академия успешной жизни</title>
 
 	<link rel="stylesheet" href="css/reset.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/jQuery.sSlider.min.css"/>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
+	<header class="header-top">
 		<img src="img/logo.png" alt="Logo" class="logo">
 		<ul class="footer-links">
 			<li>
@@ -31,141 +32,147 @@
 			</li>
 		</ul>
 	</header>
-	<section id="header-section" class="header-section">
-		<div class="slider">
-			<div id="mySlider" class="sSlider">
-				<div class="slide">
-					<div class="border-slide">
-						<img src="img/slider-img-1.png"/>
+	<div id="fullpage">
+		<section id="header-section" class="header-section vertical-scrolling">
+			<div class="slider">
+				<div id="mySlider" class="sSlider">
+					<div class="slide">
+						<div class="border-slide">
+							<img src="img/slider-img-1.png"/>
+						</div>
+						<div class="title-slide">
+							<h2>ЛИЧНАЯ КОНСУЛЬТАЦИЯ</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+							<a href="">
+								Подробнее 	<span>&#8250;</span>
+							</a>
+						</div>
 					</div>
-					<div class="title-slide">
-						<h2>ЛИЧНАЯ КОНСУЛЬТАЦИЯ</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-						<a href="">
-							Подробнее 	<span>&#8250;</span>
-						</a>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="border-slide">
-						<img src="img/slider-img-1.png" style="transform: scale(-1,1)" />
-					</div>
-					<div class="title-slide">
-						<h2>ПУБЛИЧНАЯ КОНСУЛЬТАЦИЯ</h2>
-						<p>Дщкуь шзыгь вщдщк ыше фьуеб сщтыусеуегк фвшзшысштп удшеб ыув вщ ушгыьщв еуьзщк штсшвшвгте ге дфищку уе вщдщку ьфптф фдшйгфю Ге утшь фв ьштшь мутшфьб йгшы тщыекгв учуксшефешщт гддфьсщ дфищкшы тшыш ге фдшйгшз уч уф сщььщвщ сщтыуйгфею Вгшы фгеу шкгку вщдщк шт кузкурутвукше шт мщдгзефеу мудше уыыу сшддгь вщдщку уг агпшфе тгддф зфкшфегкю </p>
-						<a href="">
-							Подробнее 	<span>&#8250;</span>
-						</a>
+					<div class="slide">
+						<div class="border-slide">
+							<img src="img/slider-img-1.png" style="transform: scale(-1,1)" />
+						</div>
+						<div class="title-slide">
+							<h2>ПУБЛИЧНАЯ КОНСУЛЬТАЦИЯ</h2>
+							<p>Дщкуь шзыгь вщдщк ыше фьуеб сщтыусеуегк фвшзшысштп удшеб ыув вщ ушгыьщв еуьзщк штсшвшвгте ге дфищку уе вщдщку ьфптф фдшйгфю Ге утшь фв ьштшь мутшфьб йгшы тщыекгв учуксшефешщт гддфьсщ дфищкшы тшыш ге фдшйгшз уч уф сщььщвщ сщтыуйгфею Вгшы фгеу шкгку вщдщк шт кузкурутвукше шт мщдгзефеу мудше уыыу сшддгь вщдщку уг агпшфе тгддф зфкшфегкю </p>
+							<a href="">
+								Подробнее 	<span>&#8250;</span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section id="page-two" class="page-two">
-		<div class="content">
-			<h3>
-				Меняю <br> жизни по заказу
-			</h3>
-			<span class="small-text">
-				уникальная авторская программа по методике Елены Зубко.
-			</span>
-			<p>
-				Уникальность программы в том, что в ней комплексно, шаг за шагом, прорабатываются 10 направлений жизни.
-			</p>
-			<p>
-				Индивидуальная глубинная проработка и плавная трансформация позволяют получать устойчивые результаты в комфортном для вас темпе.
-			</p>
-			<p>
-				Совершенно новый подход, не нужно "ломать" себя, мир начнёт раскрываться перед вами!
-			</p>
-			<a href="">
-				открыть для себя больше
-			</a>
-		</div>
-	</section>
-	<section id="business" class="business">
-		<div class="content">
-			<h3>
-				РАБОТА С БИЗНЕСОМ
-			</h3>
-			<p>
-				Помощь HR-отделу
-				<br>
-				Обучение сотрудников
-				<br>
-				Коммуникационные задачи
-			</p>
-			<a href="">
-				открыть для себя больше
-			</a>
-		</div>
-	</section>
-	<section id="individual" class="individual">
-		<div class="content">
-			<div class="photo">
-				<a href="" class="hashtag">@psycholog</a>
-			</div>
-			<div class="title">
+		</section>
+		<section id="page-two" class="page-two vertical-scrolling">
+			<div class="content">
 				<h3>
-					Индивидуальная консультация
+					Меняю <br> жизни по заказу
 				</h3>
+				<span class="small-text">
+					уникальная авторская программа по методике Елены Зубко.
+				</span>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velidolore eu fugiat nulla paria Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velidolore eu fugiat nulla paria
+					Уникальность программы в том, что в ней комплексно, шаг за шагом, прорабатываются 10 направлений жизни.
+				</p>
+				<p>
+					Индивидуальная глубинная проработка и плавная трансформация позволяют получать устойчивые результаты в комфортном для вас темпе.
+				</p>
+				<p>
+					Совершенно новый подход, не нужно "ломать" себя, мир начнёт раскрываться перед вами!
 				</p>
 				<a href="">
 					открыть для себя больше
 				</a>
 			</div>
-		</div>
-	</section>
-	<section id="friend" class="friend">
-		<div class="content">
-			<h4>
-				ПРИВЕТ, ДРУГ!
-			</h4>
-			<p>
-				Спасибо, что посмотрел нашу страницу. Мы очень хотим помочь тебе найти ответы на вопросы жизни или помочь тебе пройти трудный этап, достичь новых резельтатов в бизнесе. Напиши нам свой вопрос или поделись проблемой с помощью формы. Если не заешь, что написать - читай наш ресурс, тут ты найдешь много ответов и решений?".
-			</p>
-			<a href="">
-				открыть для себя больше
-			</a>
-		</div>
-	</section>
-	<footer>
-		<div class="content">
-			<h3>
-				CONTACT ME
-			</h3>
-			<div class="contacts">
+		</section>
+		<section id="business" class="business vertical-scrolling">
+			<div class="content">
+				<h3>
+					РАБОТА С БИЗНЕСОМ
+				</h3>
 				<p>
-					CALL ME
-				</p>
-				<a href="callto:+380955220076">095 522 00 76</a>
-				<p>
-					CALL ME
-				</p>
-				<a href="mailto:academy@gmail.com">academy@gmail.com</a>
-			</div>
-			<div class="feedback">
-				<h4>
-					НАПИШИ НАМ
-				</h4>
-				<p>
-					Наш консультант с радостью ответит на твои вопросы и поможет советом. Мы будем счастливы, если нам удастся помочь тебе стать чуточку счастливее.
+					Помощь HR-отделу
+					<br>
+					Обучение сотрудников
+					<br>
+					Коммуникационные задачи
 				</p>
 				<a href="">
-					написать свою историю
+					открыть для себя больше
 				</a>
-				
 			</div>
-			<p class="copyright">
-				2017. Style Whisperer. Design & Development by sponge.
-			</p>
-		</div>
-	</footer>
-	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		</section>
+		<section id="individual" class="individual vertical-scrolling">
+			<div class="content">
+				<div class="photo">
+					<a href="" class="hashtag">@psycholog</a>
+				</div>
+				<div class="title">
+					<h3>
+						Индивидуальная консультация
+					</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velidolore eu fugiat nulla paria Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velidolore eu fugiat nulla paria
+					</p>
+					<a href="">
+						открыть для себя больше
+					</a>
+				</div>
+			</div>
+		</section>
+		<section id="friend" class="friend vertical-scrolling">
+			<div class="content">
+				<h4>
+					ПРИВЕТ, ДРУГ!
+				</h4>
+				<p>
+					Спасибо, что посмотрел нашу страницу. Мы очень хотим помочь тебе найти ответы на вопросы жизни или помочь тебе пройти трудный этап, достичь новых резельтатов в бизнесе. Напиши нам свой вопрос или поделись проблемой с помощью формы. Если не заешь, что написать - читай наш ресурс, тут ты найдешь много ответов и решений?".
+				</p>
+				<a href="">
+					открыть для себя больше
+				</a>
+			</div>
+		
+		<footer>
+			<div class="content">
+				<h3>
+					CONTACT ME
+				</h3>
+				<div class="contacts">
+					<p>
+						CALL ME
+					</p>
+					<a href="callto:+380955220076">095 522 00 76</a>
+					<p>
+						CALL ME
+					</p>
+					<a href="mailto:academy@gmail.com">academy@gmail.com</a>
+				</div>
+				<div class="feedback">
+					<h4>
+						НАПИШИ НАМ
+					</h4>
+					<p>
+						Наш консультант с радостью ответит на твои вопросы и поможет советом. Мы будем счастливы, если нам удастся помочь тебе стать чуточку счастливее.
+					</p>
+					<a href="">
+						написать свою историю
+					</a>
+
+				</div>
+				<p class="copyright">
+					2017. Style Whisperer. Design & Development by sponge.
+				</p>
+			</div>
+		</footer>
+		</section>
+		
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> -->
 	<script src="js/jQuery.sSlider.min.js"></script>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+	<script src="js/script.js"></script>
 
 	<script>
 		$(document).ready(function(){

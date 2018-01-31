@@ -67,7 +67,7 @@ $('#fullpage').fullpage({
 
 var currentX = '';
 var currentY = '';
-var movementConstant = .915;
+var movementConstant = .115;
 $(document).mousemove(function(e) {
   if(currentX == '') currentX = e.pageX;
   var xdiff = e.pageX - currentX;

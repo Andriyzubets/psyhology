@@ -79,13 +79,13 @@ header {
 .sandwich div:nth-child(2n) {
 	margin: 0 0 9px 19px;
 }
- .sandwich:focus div:nth-child(2n) {
+.sandwich:focus div:nth-child(2n) {
 	display: none;
 }
- .sandwich:focus div:first-child {
+.sandwich:focus div:first-child {
 	transform: rotate(45deg) translateY(10px) translateX(10px);
 }
- .sandwich:focus div:last-child {
+.sandwich:focus div:last-child {
 	transform: rotate(-45deg) translateX(-2px) translateY(2px);
 }
 .header-section {
@@ -190,6 +190,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+	padding: 8% 0 0;
 }
 .business h3, .individual h3 {
 	width: 100%;
@@ -197,6 +198,7 @@ header {
 	font-family: 'GothamProBold', sans-serif;
 	font-size: 48px;
 	color: #000;
+	z-index: 1;
 }
 .business p {
 	margin: 140px 0 122px;
@@ -204,6 +206,7 @@ header {
 	font-family: 'GothamProLight', sans-serif;
 	font-size: 36px;
 	color: #000;
+	z-index: 1;
 }
 .business a {
 	width: 50%;
@@ -219,8 +222,8 @@ header {
 }
 .individual .photo {
 	margin: 0 0 0 40px;
-    width: 37%;
-    height: 31rem;
+	width: 37%;
+	height: 31rem;
 	background: url(../img/psy-blur.jpg) no-repeat;
 	background-size: cover;
 }
@@ -468,10 +471,10 @@ footer .copyright {
 	display: block;
 }
 footer, footer >div {
-		width: 100% !important;
-		height: 20vw !important;
-		margin: 0 !important;
-	}
+	width: 100% !important;
+	height: 20vw !important;
+	margin: 0 !important;
+}
 div.parallax {
 	position: absolute;
 	overflow: hidden;
@@ -490,18 +493,39 @@ div.parall {
 }
 div.left-sheet {
 	background-size: 60%;
-    background-position-x: -50%;
+	background-position-x: -50%;
 }
 div.right-sheet {
-    background-size: 53%;
-    background-position-y: 300%;
-    background-position-x: 170%;
+	background-size: 53%;
+	background-position-y: 300%;
+	background-position-x: 170%;
+}
+div.parallax-1 {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+div.parall-1 {
+	position: absolute;
+	width: 30%;
+	height: 30vw;
+	background: url(../img/buis-blur.jpg) no-repeat;
+	background-size: cover;
+	z-index: 0;
+	left: 17%;
+	top: 10%;
+	box-shadow: 7px 7px 15px #f3b2c3;
 }
 .scene  {
 	position: absolute;
-	    top: 10%;
-    left: 20%;
-    z-index: -1;
+	top: 20%;
+	left: 38%;
+	z-index: -2;
+	width: 70% !important;
+	height: 70vh !important;
 }
 .scene--left  {
 	width: 100vmin;
@@ -521,30 +545,91 @@ div.right-sheet {
 }
 @media screen and (max-width: 1500px) {
 	.fp-section.fp-table, .fp-slide.fp-table {
-		width: 80%;
+		width: 70%;
 		margin: 0 auto;
 	}
+	#page-two {
+		width: 100%;
+	}
 	.header-section h2 {
-		font-size: 50px;
+		font-size: 36px;
 		word-break: break-word;
 	}
 	.border-slide {
-		height: 30vw;
+		height: 26vw;
 	}
 	#main-menu .title {
 		font-size: 100px;
 	}
 	.individual .content {
-	    margin: 10% 0 0;
+		margin: 15% 0 0;
 	}
 	footer, footer >div {
 		width: 100% !important;
-		height: 40vw !important;
-		margin: 15vw 0 0 !important;
+		/*height: 40vw !important;*/
+		/*margin: 5vw 0 0 !important;*/
 	}
 	footer .content {
 		width: 90%;
 		margin: 0 auto;
+	}
+	footer h3 {
+		font-size: 36px;
+		margin: 0 0 35px;
+	}
+	footer .contacts p, footer .feedback h4 {
+		font-size: 18px;
+	}
+	footer .contacts a {
+		font-size: 21px;
+	}
+	footer .contacts a:last-child {
+		font-size: 21px;
+		margin: 0 0 0 30px;
+	}
+	footer .copyright {
+		font-size: 16px;
+		margin: 40px 0 20px;
+	}
+	.page-two .content, .business .content, footer .content {
+		width: 70%;
+	}
+	.page-two h3 {
+		font-size: 36px;
+	}
+	.scene {
+		position: absolute;
+		top: 20%;
+		left: 38%;
+		z-index: -2;
+		width: 70% !important;
+		height: 70vh !important;
+	}
+	.page-two p{
+		width: 50%;
+	}
+	.business .content {
+		width: 100%;
+		padding: 25% 0 0;
+	}
+	div.parall-1 {
+		width: 35%;
+		left: 5%;
+		top: 20%;
+	}
+	.business h3, .individual h3 {
+		font-size: 36px;
+	}
+	.business p {
+		margin: 100px 0 62px;
+		font-size: 24px;
+	} 
+	a.hashtag {
+		width: 55%;
+	}
+	.friend p {
+		margin: 30px 0 30px;
+
 	}
 }
 @media screen and (max-width: 1024px) {
@@ -554,10 +639,10 @@ div.right-sheet {
 		align-items: center;
 	}
 	.header-section {
-		padding: 50px 0 0 !important;
+		padding: 0 !important;
 	}
 	.header-section h2 {
-		font-size: 36px;
+		font-size: 30px;
 	}
 	.border-slide {
 		width: 40%;
@@ -570,10 +655,10 @@ div.right-sheet {
 	.sSlider div > p {
 		margin: 20px 0px 25px;
 		text-align: center;
-		font-size: 1.3em;
+		font-size: 1.1em;
 	}
 	.title-slide a {
-		font-size: 1.8em;
+		font-size: 1.5em;
 	}
 	.facebook-up, .instagram-up, .twitter-up {
 		display: none;
@@ -596,11 +681,17 @@ div.right-sheet {
 	}
 	.business .content {
 		margin: 40% auto 0;
-		    word-break: break-word;
+		word-break: break-word;
 
 	}
 	.business p {
 		margin: 50px 0 40px;
+		width: 100%;
+		text-align: center;
+	}
+	.business a {
+		width: 100%;
+		text-align: center;
 	}
 	.individual .photo {
 		display: none;
@@ -610,10 +701,63 @@ div.right-sheet {
 	}
 	.individual p {
 		margin: 25px 0 20px;
+		font-size: 16px;
 	}
 	.individual h3 {
 		
-		font-size: 36px;
+		font-size: 30px;
+	}
+	.scene, .parallax, .canvas {
+		display: none;
+	}
+	.page-two h3 {
+		font-size: 30px;
+		width: 100%;
+		max-width: 100%;
+	}
+	.page-two p {
+		width: 100%;
+		max-width: 100%;
+	}
+	.individual .content {
+		margin: 0;
+	} 
+	.individual a {
+		font-size: 18px;
+		margin: 25px 0 0;
+	}
+	.friend h4 {
+		font-size: 30px;
+	}
+	.friend p {
+		font-size: 18px;
+
+		margin: 40px 0 25px;
+	}
+	.friend a {
+		margin: 25px 0 0;
+	}
+	footer h3 {
+		font-size: 24px;
+		margin: 0 0 35px;
+	}
+	footer .contacts p, footer .feedback h4 {
+		font-size: 14px;
+	}
+	footer .contacts a {
+		font-size: 16px;
+	}
+	footer .contacts a:last-child {
+		font-size: 16px;
+	} 
+	footer .feedback h4 {
+		margin: 0 0 20px;
+	}
+	footer .feedback p {
+		font-size: 16px;
+	} 
+	footer, footer >div {
+		margin: 5vw 0 0 !important;
 	}
 }
 @media screen and (max-width: 660px) {
@@ -655,11 +799,8 @@ div.right-sheet {
 		width: 80%;
 		margin: 0 auto;
 	}
-	.page-two .content, .business .content, .individual .content, .friend .content, footer .content {
-		margin: 40% auto 0;
-	}
-	.page-two h3 {
-		font-size: 36px;
+	.page-two .content, .individual .content, .friend .content {
+		margin: 20% auto 0;
 	}
 	.small-text {
 		margin: 10px 0 12px;
@@ -679,14 +820,16 @@ div.right-sheet {
 	}
 	footer .content {
 		flex-direction: column;
+		width: 90%;
 	}
 	footer h3 {
-		font-size: 36px;
+		font-size: 24px;
 		margin: 0 0 20px;
 	}
 	footer .contacts, footer .feedback {
-		width: 95%;
 		margin: 0 auto;
+		text-align: center;
+		width: 100%;
 	}
 	footer .feedback h4 {
 		margin: 0 0 20px;
@@ -694,10 +837,47 @@ div.right-sheet {
 	footer .copyright {
 		margin: 25px 0 0 0;
 	}
+	.page-two p {
+		font-size: 14px;
+	}
+	.page-two a, .business a, .individual a, .friend a, .feedback a {
+		margin: 20px 0 0;
+		font-size: 16px;
+	}
+	.business h3, .individual h3 {
+		word-break: break-word;
+		font-size: 24px;
+	}
+	.business p, .individual p {
+		font-size: 14px;
+	}
+	.friend h4 {
+		font-size: 24px;
+	}
+	.friend p {
+		font-size: 14px;
+		margin: 20px 0 25px;
+	}
+	footer, footer >div {
+		margin: 10vw 0 0 !important;
+	}
+	footer .contacts p, footer .feedback h4 {
+		margin: 0 0 10px;
+		width: 100%;
+	}
+	footer .contacts a, footer .contacts a:last-child {
+		margin: 0 0 20px;
+	}
 }
 @media screen and (max-width: 480px) {
 	#main-menu li {
 		width: 80%;
 		margin: 2% 0 2.5% 15%;
+	}
+	.business .content {
+		margin: 100% 0 auto;
+	}
+	footer .feedback a {
+		margin: 10px 0 0;
 	}
 }

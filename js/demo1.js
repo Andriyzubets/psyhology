@@ -3,9 +3,7 @@ var width = canvas.offsetWidth,
     height = canvas.offsetHeight;
 
 var colors = [
-    new THREE.Color(0xac1122),
-    new THREE.Color(0x96789f),
-    new THREE.Color(0x535353)];
+    new THREE.Color(0xdcdcdc)];
 
 var renderer = new THREE.WebGLRenderer({
     canvas: canvas,
@@ -31,7 +29,7 @@ scene.add(galaxy);
 var loader = new THREE.TextureLoader();
 loader.crossOrigin = "";
 var dotTexture = loader.load("img/dotTexture.png");
-var dotsAmount = 3000;
+var dotsAmount = 1000;
 var dotsGeometry = new THREE.Geometry();
 var positions = new Float32Array(dotsAmount * 3);
 

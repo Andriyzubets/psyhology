@@ -94,8 +94,9 @@ header {
 	width: 100%;
 	margin: 0 auto;
 }
-.header-section .slider {
-	padding: 135px 0 0 0 !important;
+.header-section .content {
+	display: flex;
+	margin: 20% auto;
 }
 .border-slide {
 	display: flex !important;
@@ -648,9 +649,6 @@ header {
 			transform: rotate(-45deg) translate(-20px, 20px);
 			opacity: 0;
 		}
-	}
-	#header-section {
-		max-height: 
 	}
 	/* about page*/
 	@media screen and (max-width: 1500px) {

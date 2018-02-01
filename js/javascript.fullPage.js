@@ -103,16 +103,16 @@
         // Create some defaults, extending them with any options that were provided
         var defaults = {
             //navigation
-            menu: false,
+            menu: true,
             anchors:[],
-            navigation: false,
+            navigation: true,
             navigationPosition: 'right',
             navigationColor: '#000',
             navigationTooltips: [],
-            showActiveTooltip: false,
-            slidesNavigation: false,
+            showActiveTooltip: true,
+            slidesNavigation: true,
             slidesNavPosition: 'bottom',
-            scrollBar: false,
+            scrollBar: true,
 
             //scrolling
             css3: true,
@@ -2073,8 +2073,8 @@
 
         //in touch devices with scrollBar:true, e.pageY is detected, but we have to deal with touch events. #1008
         if(isTouch && isReallyTouch(e)){
-            events.y = e.touches[0].pageY;
-            events.x = e.touches[0].pageX;
+            // events.y = e.touches[0].pageY;
+            // events.x = e.touches[0].pageX;
         }
 
         return events;

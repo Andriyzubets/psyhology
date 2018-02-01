@@ -8,7 +8,9 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<!-- <link href="css/jquery.fullpage.css" rel="stylesheet"> -->
 	<link href="css/javascript.fullPage.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/jQuery.sSlider.min.css"/>
+	<!-- <link rel="stylesheet" href="css/jQuery.sSlider.min.css"/> -->
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -78,8 +80,41 @@
 		</ul>
 	</header>
 	<div id="fullpage">
-		<section id="header-section" class="header-section vertical-scrolling">
-			<div class="slider">
+		<section id="header-section" class="header-section section slides">
+				<div class="content" id="slide1">
+					<div class="border-slide">
+						<img src="img/slider-img-1.png"/>
+					</div>
+					<div class="title-slide">
+						<h2>ЛИЧНАЯ КОНСУЛЬТАЦИЯ</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+						<a href="">
+							Подробнее 	<span>&#8250;</span>
+						</a>
+					</div>
+					<div class="nav-slide">
+						<a href="" class="active-nav active-nav-first"></a>
+						<a href="" class="next-nav next-nav-first"></a>
+					</div>
+				</div>
+				<div class="content" id="slide2">
+					<div class="border-slide">
+						<img src="img/slider-img-1.png"/>
+					</div>
+					<div class="title-slide">
+						<h2>ЛИЧНАЯ КОНСУЛЬТАЦИЯ</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+						<a href="">
+							Подробнее 	<span>&#8250;</span>
+						</a>
+					</div>
+					<div class="nav-slide">
+						<a href="" class="active-nav active-nav-first"></a>
+						<a href="" class="next-nav next-nav-first"></a>
+					</div>
+				</div>
+
+			<!-- <div class="slider">
 				<div id="mySlider" class="sSlider">
 					<div class="slide">
 						<div class="border-slide">
@@ -114,10 +149,10 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<a href="#page-two" class="scroll-down-btn"  style="bottom: 100px"><span></span></a>
 		</section>
-		<section id="page-two" class="page-two vertical-scrolling">
+		<section id="page-two" class="page-two section">
 			<div class="content">
 				
 				<h3>
@@ -142,7 +177,7 @@
 			</div>
 			<a href="#business" class="scroll-down-btn"><span></span></a>
 		</section>
-		<section id="business" class="business vertical-scrolling">
+		<section id="business" class="business section">
 			<div class="content" id="content-buisiness">
 				<canvas id="demo-canvas" class="canvas" style="position: fixed;"></canvas>
 				<div class="parallax-1 parallax">
@@ -165,7 +200,7 @@
 			</div>
 			<a href="#individual" class="scroll-down-btn" style="bottom: 180px"><span></span></a>
 		</section>
-		<section id="individual" class="individual vertical-scrolling">
+		<section id="individual" class="individual section">
 			<div class="content">
 				<div class="photo">
 					<a href="" class="hashtag">@psycholog</a>
@@ -184,7 +219,7 @@
 			</div>
 			<a href="#friend" class="scroll-down-btn"><span></span></a>
 		</section>
-		<section id="friend" class="friend vertical-scrolling">
+		<section id="friend" class="friend section">
 			<div class="content">
 				<div class="parallax">
 					<div class="parall left-sheet"></div>
@@ -202,7 +237,7 @@
 			</div>
 			<a href="#contacts" class="scroll-down-btn"><span></span></a>
 		</section>
-		<footer id="contacts" class="vertical-scrolling">
+		<footer id="contacts" class="section">
 			<div class="content">
 				<h3>
 					CONTACT ME
@@ -260,8 +295,10 @@
 	</script>
 
 	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/jQuery.sSlider.min.js"></script>
-	<script src="js/jquery.fullpage.js"></script>
+	<script src="js/slick.js"></script>
+	<!-- <script src="js/jQuery.sSlider.min.js"></script> -->
+	<!-- <script src="js/jquery.fullpage.js"></script> -->
+	<script src="js/javascript.fullPage.js"></script>
 	<script src="js/three.min.js"></script>
 	<script src="js/TweenMax.min.js"></script>
 	<script src="js/demo1.js"></script>
@@ -295,7 +332,10 @@
 		});
 	</script>
 	<!-- Слайдер -->
-	<script>
+
+
+
+	<!-- <script>
 		$(document).ready(function(){
 			$('#mySlider').sSlider({
 				'nav': true,
@@ -303,15 +343,24 @@
 				'fixedSize': { 'width': '100%', 'height': '450px' }
 			});
 		});
-	</script>
+	</script> -->
 	<!-- Full page -->
-	<!-- <script type="text/javascript">
+	<script type="text/javascript">
 		fullpage.initialize('#fullpage', {
 			anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', 'lastPage'],
 			menu: '#menu',
 			css3:true
 		});
 
-	</script> -->
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.slides').slick({
+				dots: true,
+				autoplay: false,
+				autoplaySpeed: 2000,
+			});
+		});
+	</script>
 </body>
 </html>

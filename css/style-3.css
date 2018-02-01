@@ -245,11 +245,11 @@ header {
   height: 30px;
   display: block;
 }
-.title-slide a, #page-two a, #business a, .individual a, .friend a, footer a {
+.title-slide a, #page-two a, #business a, #individual a, .friend a, footer a {
   transition: color 0.5s;
   transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 }
-.title-slide a:before, #page-two a:before, #business a:before, .individual a:before, .friend a:before, footer a:before  {
+.title-slide a:before, #page-two a:before, #business a:before, #individual a:before, .friend a:before, footer a:before  {
   content: '';
   position: relative;
   margin: 0;
@@ -266,7 +266,7 @@ header {
   background: #fe628e;
 }
 .title-slide a:hover:before,
-.title-slide a:focus:before, #page-two a:hover:before, #page-two a:focus:before, #business a:hover:before, #business a:focus:before, .individual a:hover:before, .individual a:focus:before, .friend a:hover:before, .friend a:focus:before, footer a:hover:before, footer a:focus:before{
+.title-slide a:focus:before, #page-two a:hover:before, #page-two a:focus:before, #business a:hover:before, #business a:focus:before, #individual a:hover:before, #individual a:focus:before, .friend a:hover:before, .friend a:focus:before, footer a:hover:before, footer a:focus:before{
   transform: scale3d(1,1,1);
 }
 /* 1 slide */
@@ -327,7 +327,7 @@ header {
   color: #000;
 }
 /* 2 page */
-#page-two .content, #business .content, .individual .content, .friend .content, footer .content {
+#page-two .content, #business .content, #individual .content, .friend .content, footer .content {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -355,7 +355,7 @@ header {
   margin: 0 0 15px;
   text-align: left;
 }
-#page-two a, #business a, .individual a, .friend a, .feedback a {
+#page-two a, #business a, #individual a, .friend a, .feedback a {
   color: #000;
   font-size: 21px;
   display: inline-block;
@@ -367,11 +367,11 @@ header {
 
 /* 3 page */
 
-.individual a {
+#individual a {
     margin: 0;`
     z-index: 10;
   }
-  #business, .individual, .friend, footer {
+  #business, #individual, .friend, footer {
     margin: 100px 0 0 0;
   }
   #business .content {
@@ -380,7 +380,7 @@ header {
     align-items: flex-end;
     padding: 8% 0 0;
   }
-  #business h3, .individual h3 {
+  #business h3, #individual h3 {
     width: 100%;
     text-align: center;
     font-family: 'GothamProBold', sans-serif;
@@ -403,7 +403,7 @@ header {
   }
 
   /* 4 page */
-.individual .content {
+#individual .content {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -411,14 +411,14 @@ header {
     display: flex;
     justify-content: space-between;
   }
-  .individual .photo {
+  #individual .photo {
     /*margin: 0 0 0 40px;*/
     width: 37%;
     height: 31rem;
     background: url(../img/psy-blur.jpg) no-repeat;
     background-size: cover;
   }
-  .individual .title {
+  #individual .title {
     width: 58%;
   }
   a.hashtag {
@@ -433,12 +433,12 @@ header {
     padding: 2%;
     width: 42%;
   }
-  .individual h3{
+  #individual h3{
     color: #565656;
     text-align: left;
     margin: 80px 0 0 0;
   }
-  .individual p {
+  #individual p {
     font-family: 'GothamProLight', sans-serif;
     color: #565656;
     font-size: 18px;

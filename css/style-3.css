@@ -44,7 +44,7 @@ header {
   max-width: 107px;
   margin: 27px 0 0 50px;
 }
-.header-links {
+#header-links {
   display: flex;
   justify-content: space-between;
   width: 30%;
@@ -368,175 +368,584 @@ header {
 /* 3 page */
 
 #individual a {
-    margin: 0;`
-    z-index: 10;
-  }
-  #business, #individual, #friend, #footer {
-    margin: 100px 0 0 0;
-  }
-  #business .content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 8% 0 0;
-  }
-  #business h3, #individual h3 {
-    width: 100%;
-    text-align: center;
-    font-family: 'GothamProBold', sans-serif;
-    font-size: 48px;
-    color: #000;
-    z-index: 1;
-  }
-  #business p {
-    margin: 140px 0 122px;
-    width: 50%;
-    font-family: 'GothamProLight', sans-serif;
-    font-size: 36px;
-    color: #000;
-    z-index: 1;
-  }
-  #business a {
-    /*width: 50%;*/
-    margin: 60px 0 0;
-    z-index: 10;
-  }
+  margin: 0;`
+  z-index: 10;
+}
+#business, #individual, #friend, #footer {
+  margin: 100px 0 0 0;
+}
+#business .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 8% 0 0;
+}
+#business h3, #individual h3 {
+  width: 100%;
+  text-align: center;
+  font-family: 'GothamProBold', sans-serif;
+  font-size: 48px;
+  color: #000;
+  z-index: 1;
+}
+#business p {
+  margin: 140px 0 122px;
+  width: 50%;
+  font-family: 'GothamProLight', sans-serif;
+  font-size: 36px;
+  color: #000;
+  z-index: 1;
+}
+#business a {
+  /*width: 50%;*/
+  margin: 60px 0 0;
+  z-index: 10;
+}
 
-  /* 4 page */
+/* 4 page */
 #individual .content {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: space-between;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+#individual .photo {
+  /*margin: 0 0 0 40px;*/
+  width: 37%;
+  height: 31rem;
+  background: url(../img/psy-blur.jpg) no-repeat;
+  background-size: cover;
+}
+#individual .title {
+  width: 58%;
+}
+a.hashtag {
+  position: relative;
+  top: 70%;
+  left: -9%;
+  font-family: 'GothamProLight', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  background: #febdc8;
+  color: #fff;
+  padding: 2%;
+  width: 42%;
+}
+#individual h3{
+  color: #565656;
+  text-align: left;
+  margin: 80px 0 0 0;
+}
+#individual p {
+  font-family: 'GothamProLight', sans-serif;
+  color: #565656;
+  font-size: 18px;
+  margin: 65px 0 70px 10px;
+}
+/* 5 page */
+#friend {
+  padding: 2% 0 0;
+}
+#friend h4{
+  color: #565656;
+  font-family: 'GothamProLight', sans-serif;
+  font-size: 36px;
+  text-align: center;
+}
+#friend p {
+  color: #565656;
+  font-family: 'GothamProLight', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 80px 0 77px;
+}
+#friend a {
+  text-align: center;
+}
+#friend a:hover:after {
+  margin: 0 auto;
+}
+
+/* #footer */
+
+#footer {
+  background: #262626;
+  padding: 67px 0 72px;
+  margin: 3% 0 0 0;
+  /*height: 80vw;*/
+}
+#footer .content {
+  display: flex;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+#footer .contacts, #footer .feedback {
+  width: 48%;
+}
+#footer h3 {
+  color: #939191;
+  font-size: 60px;
+  font-family: 'GothamProLight', sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 0 0 70px;
+}
+#footer .contacts p, #footer .feedback h4 {
+  color: #565656;
+  font-family: 'GothamProLight', sans-serif;
+  font-size: 24px;
+  margin: 0 0 25px;
+}
+#footer .contacts a {
+  color: #d8d8d8;
+  font-family: 'GothamProLight', sans-serif;
+  font-size: 30px;
+  margin: 0 0 45px 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#footer .contacts a:last-child {
+  font-size: 24px;
+}
+#footer .feedback h4 {
+  margin: 0 0 50px;
+}
+#footer .feedback p {
+  color: #d8d8d8;
+  font-size: 18px;
+  font-family: 'GothamProLight', sans-serif;
+}
+#footer .feedback a {
+  margin: 33px 0 0 0;
+  font-size: 18px;
+  color: #a8a8a8;
+}
+#footer .feedback a:hover:after {
+  z-index: 0;
+  opacity: .5;
+  width: 223px;
+}
+#footer .copyright {
+  margin: 95px 0 0 0;
+  text-align: center;
+  color: #a8a8a8;
+  font-size: 18px;
+  width: 100%;
+}
+#footer, #footer >div {
+  width: 100% !important;
+  height: 20vw !important;
+  margin: 0 !important;
+}
+a.scroll-down-btn {
+  position: absolute;
+  /*bottom: 120px;*/
+  /*left: 50%;*/
+  z-index: 9999;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  transition: opacity .3s;
+  padding-top: 70px;
+}
+a.scroll-down-btn:hover {
+  opacity: .5;
+}
+a.scroll-down-btn span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sda 1.5s infinite;
+  animation: sda 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sda {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
   }
-  #individual .photo {
-    /*margin: 0 0 0 40px;*/
-    width: 37%;
-    height: 31rem;
-    background: url(../img/psy-blur.jpg) no-repeat;
-    background-size: cover;
+  50% {
+    opacity: 1;
   }
-  #individual .title {
-    width: 58%;
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
   }
-  a.hashtag {
-    position: relative;
-    top: 70%;
-    left: -9%;
-    font-family: 'GothamProLight', sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-    background: #febdc8;
-    color: #fff;
-    padding: 2%;
-    width: 42%;
+}
+@keyframes sda {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
   }
-  #individual h3{
-    color: #565656;
-    text-align: left;
-    margin: 80px 0 0 0;
+  50% {
+    opacity: 1;
   }
-  #individual p {
-    font-family: 'GothamProLight', sans-serif;
-    color: #565656;
-    font-size: 18px;
-    margin: 65px 0 70px 10px;
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
   }
-  /* 5 page */
-  #friend {
-    padding: 2% 0 0;
-  }
-  #friend h4{
-    color: #565656;
-    font-family: 'GothamProLight', sans-serif;
-    font-size: 36px;
-    text-align: center;
-  }
-  #friend p {
-    color: #565656;
-    font-family: 'GothamProLight', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    margin: 80px 0 77px;
-  }
-  #friend a {
-    text-align: center;
-  }
-  #friend a:hover:after {
+}
+@media screen and (max-width: 1500px) {
+  .fp-section.fp-table, .fp-slide.fp-table {
+    width: 70%;
     margin: 0 auto;
   }
-
-  /* #footer */
-
-  #footer {
-    background: #262626;
-    padding: 67px 0 72px;
-    margin: 3% 0 0 0;
-    /*height: 80vw;*/
+  #page-two {
+    width: 100%;
+  }
+  #header-section h2 {
+    font-size: 36px;
+    word-break: break-word;
+  }
+  .border-slide {
+    height: 26vw;
+  }
+  #main-menu .title {
+    font-size: 100px;
+  }
+  #individual .content {
+    margin: 15% 0 0;
+  }
+  #footer, #footer >div {
+    width: 100% !important;
+    /*height: 40vw !important;*/
+    /*margin: 5vw 0 0 !important;*/
   }
   #footer .content {
-    display: flex;
-    justify-content: space-between;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
-    flex-wrap: wrap;
+    width: 90%;
     margin: 0 auto;
   }
-  #footer .contacts, #footer .feedback {
-    width: 48%;
-  }
   #footer h3 {
-    color: #939191;
-    font-size: 60px;
-    font-family: 'GothamProLight', sans-serif;
-    text-align: center;
-    width: 100%;
-    margin: 0 0 70px;
+    font-size: 36px;
+    margin: 0 0 35px;
   }
   #footer .contacts p, #footer .feedback h4 {
-    color: #565656;
-    font-family: 'GothamProLight', sans-serif;
-    font-size: 24px;
-    margin: 0 0 25px;
+    font-size: 18px;
   }
   #footer .contacts a {
-    color: #d8d8d8;
-    font-family: 'GothamProLight', sans-serif;
-    font-size: 30px;
-    margin: 0 0 45px 30px;
-    text-decoration: none;
-    display: inline-block;
+    font-size: 21px;
   }
-
   #footer .contacts a:last-child {
-    font-size: 24px;
-  }
-  #footer .feedback h4 {
-    margin: 0 0 50px;
-  }
-  #footer .feedback p {
-    color: #d8d8d8;
-    font-size: 18px;
-    font-family: 'GothamProLight', sans-serif;
-  }
-  #footer .feedback a {
-    margin: 33px 0 0 0;
-    font-size: 18px;
-    color: #a8a8a8;
-  }
-  #footer .feedback a:hover:after {
-    z-index: 0;
-    opacity: .5;
-    width: 223px;
+    font-size: 21px;
+    margin: 0 0 0 30px;
   }
   #footer .copyright {
-    margin: 95px 0 0 0;
+    font-size: 16px;
+    margin: 40px 0 20px;
+  }
+  #page-two .content, #business .content, #footer .content {
+    width: 70%;
+  }
+  #page-two h3 {
+    font-size: 36px;
+  }
+  .scene {
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    z-index: -2;
+    width: 70% !important;
+    height: 70vh !important;
+  }
+  #page-two p{
+    width: 50%;
+  }
+  #business .content {
+    width: 100%;
+    padding: 25% 0 0;
+  }
+  div.parall-1 {
+    width: 35%;
+    left: 5%;
+    top: 20%;
+  }
+  #business h3, #individual h3 {
+    font-size: 36px;
+  }
+  #business p {
+    margin: 100px 0 62px;
+    font-size: 24px;
+  } 
+  a.hashtag {
+    width: 55%;
+  }
+  #friend p {
+    margin: 30px 0 30px;
+
+  }
+  #individual h3 {
+    margin: 40px 0 0 0;
+  }
+  #individual p {
+    margin: 55px 0 40px 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .sSlider>div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #header-section {
+    padding: 0 !important;
+  }
+  #header-section h2 {
+    font-size: 30px;
+  }
+  .border-slide {
+    width: 40%;
+  }
+  .title-slide {
+    width: 90%;
+    margin: 3% auto 0;
     text-align: center;
-    color: #a8a8a8;
-    font-size: 18px;
+  }
+  .sSlider div > p {
+    margin: 20px 0px 25px;
+    text-align: center;
+    font-size: 1.1em;
+  }
+  .title-slide a {
+    font-size: 1.5em;
+  }
+  .facebook-up, .instagram-up, .twitter-up {
+    display: none;
+  }
+  #main-menu {
+    height: 45rem;
+  }
+  #main-menu .title {
+    font-size: 65px;
+  }
+  #main-menu li {
+    margin: 2% 0 2.5% 15%;
+    width: 90%;
+  }
+  #main-menu li.menu-social {
+    width: 35%;
+  }
+  .prgBar {
+    display: none !important;
+  }
+  #business .content {
+    margin: 40% auto 0;
+    word-break: break-word;
+
+  }
+  #business p {
+    margin: 50px 0 40px;
+    width: 100%;
+    text-align: center;
+  }
+  #business a {
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+  }
+  #individual .photo {
+    display: none;
+  }
+  #individual .title {
     width: 100%;
   }
+  #individual p {
+    margin: 25px 0 20px;
+    font-size: 16px;
+  }
+  #individual h3 {
+
+    font-size: 30px;
+  }
+  .scene, .parallax, .canvas {
+    display: none;
+  }
+  #page-two h3 {
+    font-size: 30px;
+    width: 100%;
+    max-width: 100%;
+  }
+  #page-two p {
+    width: 100%;
+    max-width: 100%;
+  }
+  #individual .content {
+    margin: 0;
+  } 
+  #individual a {
+    font-size: 18px;
+    margin: 25px 0 0;
+  }
+  #friend h4 {
+    font-size: 30px;
+  }
+  #friend p {
+    font-size: 18px;
+
+    margin: 40px 0 25px;
+  }
+  #friend a {
+    margin: 25px 0 0;
+  }
+  #footer h3 {
+    font-size: 24px;
+    margin: 0 0 35px;
+  }
+  #footer .contacts p, #footer .feedback h4 {
+    font-size: 14px;
+  }
+  #footer .contacts a {
+    font-size: 16px;
+  }
+  #footer .contacts a:last-child {
+    font-size: 16px;
+  } 
+  #footer .feedback h4 {
+    margin: 0 0 20px;
+  }
+  #footer .feedback p {
+    font-size: 16px;
+  } 
+  #footer, #footer >div {
+    margin: 5vw 0 0 !important;
+  }
+  #fp-nav.right {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 660px) {
+  .border-slide {
+    display: none !important;
+  }
+  #header-section {
+    padding: 0 !important;
+  }
+  #header-section h2 {
+    font-size: 30px;
+    margin: 20% 0 0;
+  }
+  .sSlider div > p {
+    font-size: 1em;
+  }
+  #header-links {
+    width: 60%;
+  }
+  #main-menu {
+    height: 40rem;
+  }
+  #main-menu span {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+  #main-menu .menu__item-label {
+    display: none;
+  }
+  #main-menu .title {
+    font-size: 35px;
+  }
+  #main-menu li {
+    height: 1.7em;
+  }
+  #main-menu li.menu-social {
+    align-items: center;
+    height: 26%;
+    width: 70%;
+    margin: 0 auto;
+  }
+  #page-two .content, #individual .content, #friend .content {
+    margin: 20% auto 0;
+  }
+  .small-text {
+    margin: 10px 0 12px;
+  }
+  #business p {
+    width: 100%;
+    text-align: center;
+  }
+  #individual .content {
+    margin: 50% 0 0;
+  }
+  #individual h3 {
+    margin: 10% 0 0;
+  }
+  #individual a {
+    margin: 0;
+  }
+  #footer .content {
+    flex-direction: column;
+    width: 90%;
+  }
+  #footer h3 {
+    font-size: 24px;
+    margin: 0 0 20px;
+  }
+  #footer .contacts, #footer .feedback {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  #footer .feedback h4 {
+    margin: 0 0 20px;
+  }
+  #footer .copyright {
+    margin: 25px 0 0 0;
+  }
+  #page-two p {
+    font-size: 14px;
+  }
+  #page-two a, #business a, #individual a, #friend a, .feedback a {
+    margin: 20px 0 0;
+    font-size: 16px;
+  }
+  #business h3, #individual h3 {
+    word-break: break-word;
+    font-size: 24px;
+  }
+  #business p, #individual p {
+    font-size: 14px;
+  }
+  #friend h4 {
+    font-size: 24px;
+  }
+  #friend p {
+    font-size: 14px;
+    margin: 20px 0 25px;
+  }
+  #footer, #footer >div {
+    margin: 10vw 0 0 !important;
+  }
+  #footer .contacts p, #footer .feedback h4 {
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  #footer .contacts a, #footer .contacts a:last-child {
+    margin: 0 0 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #main-menu li {
+    width: 80%;
+    margin: 2% 0 2.5% 15%;
+  }
+  #business .content {
+    margin: 100% 0 auto;
+  }
+  #footer .feedback a {
+    margin: 10px 0 0;
+  }
+}

@@ -56,13 +56,23 @@
 }
 .sSlider .prgBar {
 	width:0;
-	max-width:240px;
+	max-width:20%;
 	height:5px;
 	position:absolute;
 	top: 83%;
 	left: 48.5%;
 	background-color:rgba(115,115,115,.6)
 }
+/*.sSlider .prgBar:before {
+	content: "";
+	position: relative;
+	display: block;
+	width: 13px;
+	height: 13px;
+	transform: rotate(45deg);
+	border-top: 2px solid #727270;
+	right: 0;
+}*/
 .sSlider .pauseImg,.sSlider .playImg {
 	width:80px;
 	height:80px;

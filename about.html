@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>О нас</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header-top">
+		<img src="img/logo.png" alt="Logo" class="logo">
+		<ul class="header-links">
+			<li>
+				<a href="" class="facebook-up"></a>
+			</li>
+			<li>
+				<a href="" class="instagram-up"></a>
+			</li>
+			<li>
+				<a href="" class="twitter-up"></a>
+			</li>
+			<li>
+				<div id="back-font" opendiv=""></div>
+
+				<div iddiv="main-menu" id="menu" class="sandwich" >
+					<div></div>
+					<div></div>
+					<div></div>
+					
+				</div>
+				<ul id="main-menu">
+					<li class="title">
+						МЕНЮ
+					</li>
+					<li>
+						<a href="">
+							<span class="menu__item-name">Главная</span> <span class="menu__item-label">Explore all artists' portfolios</span>
+						</a>
+					</li>
+					<li>
+
+						<a href="">
+							<span class="menu__item-name">О компании</span> <span class="menu__item-label">Discover their stories</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="menu__item-name">Продукты</span> <span class="menu__item-label">View our event calendar</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="menu__item-name">Блог</span> <span class="menu__item-label">Read our mission statement</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="menu__item-name">Вопросы</span> <span class="menu__item-label">Get to know our eco village</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="menu__item-name">Контакт</span> <span class="menu__item-label">Purchase event tickets online</span>
+						</a>
+					</li>
+					<li class="menu-social">
+						<a href="" class="instagram"></a>
+						<a href="" class="facebook"></a>
+						<a href="" class="youtube"></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</header>
+	<section class="title">
+		<h1>
+			О нас
+		</h1>
+		<p class="technical-info">
+			17 hrs ago  -  5 min read
+		</p>
+	</section>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- <script src="js/script.js"></script> -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$(".sandwich").click(function()
+			{
+				$('#back-font').fadeIn(300);
+				var iddiv = $(this).attr("iddiv");
+				$('#'+iddiv).fadeIn(10);
+				$('#back-font').attr('opendiv',iddiv);
+				return false;
+			});
+
+			$('#back-font').click(function()
+			{
+				var iddiv = $("#back-font").attr('opendiv');
+				$('#back-font').fadeOut(600);
+				$('#'+iddiv).fadeOut(600);
+			});
+
+		});
+	</script>
+</body>
+</html>

@@ -652,6 +652,7 @@ header {
 	#header-section {
 		max-height: 
 	}
+	/* about page*/
 	@media screen and (max-width: 1500px) {
 		.fp-section.fp-table, .fp-slide.fp-table {
 			width: 70%;

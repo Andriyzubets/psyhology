@@ -27,6 +27,57 @@
 	font-family: 'GothamProLight', sans-serif;
 
 }
+.nav-slide {
+	    display: flex !important;
+    position: absolute;
+
+    top: 90%;
+    left: 45%;
+}
+.nav-slide .active-nav {
+	width: 100px;
+	height: 3px;
+	background: #565656;
+	text-decoration: none;
+}
+.nav-slide .next-nav {
+	width: 80px;
+	height: 3px;
+	background: #adadad;
+	text-decoration: none;
+}
+.nav-slide .active-nav-first:before {
+	content: "1";
+	position: relative;
+	top: -7px;
+	font-size: 16px;
+	color: #565656;
+	left: -12px;
+}
+.nav-slide .next-nav-first:after {
+	content: "2";
+	position: relative;
+	top: -7px;
+	font-size: 16px;
+	color: #565656;
+	right: -85px;
+}
+.nav-slide .next-nav-second:before {
+	content: "1";
+	position: relative;
+	top: -7px;
+	font-size: 16px;
+	color: #565656;
+	left: -10px;
+}
+.nav-slide .active-nav-second:after {
+	content: "2";
+	position: relative;
+	top: -7px;
+	font-size: 16px;
+	color: #565656;
+	right: -105px;
+}
 .sSlider div>span {
 	position:absolute;
 	bottom:5%;

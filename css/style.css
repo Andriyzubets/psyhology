@@ -595,7 +595,7 @@ header {
 	a.scroll-down-btn {
 		position: absolute;
 		/*bottom: 120px;*/
-		left: 50%;
+		/*left: 50%;*/
 		z-index: 9999;
 		display: inline-block;
 		-webkit-transform: translate(0, -50%);

@@ -93,6 +93,8 @@ header {
 	max-width: 1215px;
 	width: 100%;
 	margin: 0 auto;
+}
+.header-section .slider {
 	padding: 135px 0 0 0 !important;
 }
 .border-slide {
@@ -190,7 +192,6 @@ header {
 	}
 	.business, .individual, .friend, footer {
 		margin: 100px 0 0 0;
-		/*padding: 118px 0 130px;*/
 	}
 	.business .content {
 		display: flex;
@@ -647,6 +648,9 @@ header {
 			transform: rotate(-45deg) translate(-20px, 20px);
 			opacity: 0;
 		}
+	}
+	#header-section {
+		max-height: 
 	}
 	@media screen and (max-width: 1500px) {
 		.fp-section.fp-table, .fp-slide.fp-table {

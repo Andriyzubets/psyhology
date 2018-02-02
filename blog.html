@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>О нас</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style-3.css">
+</head>
+<body>
+	<header class="header-top header-about">
+		<a href="index.html">
+			<img src="img/logo.png" alt="Logo" class="logo logo-about">
+		</a>
+		<ul class="header-links">
+			<li>
+				<a href="" class="facebook-up"></a>
+			</li>
+			<li>
+				<a href="" class="instagram-up"></a>
+			</li>
+			<li>
+				<a href="" class="twitter-up"></a>
+			</li>
+			<li>
+				<div id="back-font" opendiv=""></div>
+
+				<a href="" iddiv="main-menu" id="menu" class="sandwich" >
+					<span></span>
+					
+				</a>
+				<ul id="main-menu">
+					<li class="title">
+						МЕНЮ
+					</li>
+					<li>
+						<a href="index.html">
+							<span class="menu__item-name">Главная</span> <span class="menu__item-label">Explore all artists' portfolios</span>
+						</a>
+					</li>
+					<li>
+
+						<a href="about.html">
+							<span class="menu__item-name">О компании</span> <span class="menu__item-label">Discover their stories</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="menu__item-name">Продукты</span> <span class="menu__item-label">View our event calendar</span>
+						</a>
+					</li>
+					<li>
+						<a href="blog.html">
+							<span class="menu__item-name">Блог</span> <span class="menu__item-label">Read our mission statement</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="menu__item-name">Вопросы</span> <span class="menu__item-label">Get to know our eco village</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="menu__item-name">Контакт</span> <span class="menu__item-label">Purchase event tickets online</span>
+						</a>
+					</li>
+					<li class="menu-social">
+						<a href="" class="instagram"></a>
+						<a href="" class="facebook"></a>
+						<a href="" class="youtube"></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</header>
+	<section class="about-header-title">
+		<div class="wrapper">
+			<h1>
+				О нас
+			</h1>
+			<p class="technical-info">
+				17 hrs ago  -  5 min read
+			</p>
+		</div>
+	</section>
+	<section class="blog-main">
+		<div class="wrapper">
+			<div class="blog-item">
+				<div class="thumb">
+					
+				</div>
+				<h3>
+					gene kelly 
+				</h3>
+				<p>
+					Classic movie quotes can have lots of definitions but in this site these are movie quotes taken from movies.
+				</p>
+				<span>
+					Антон 19, 2015
+				</span>
+			</div>
+		</div>
+	</section>
+	<footer class="about-footer">
+		<div class="about-footer-wrapper">
+			<a href="index.html" class="footer-logo-link">
+				<img src="img/logo-footer.png" alt="" class="footer-logo">
+			</a>
+			<div>
+				<a href="">
+					Facebook
+				</a>
+				<a href="">
+					Instagram
+				</a>
+			</div>
+			<div>
+				<a href="callto:+380955220076">
+					Тел. +38095 522 00 76
+				</a>
+				<a href="callto:+380955220076">
+					Тел. +38095 522 00 76
+				</a>
+			</div>
+			<div>
+				<a href="mailto:chat@flowlu.ru">
+					chat@flowlu.ru
+				</a>
+				<input type="text" placeholder="ЭЛЕКТРОННОЙ ПОЧТЫ">
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- <script src="js/script.js"></script> -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$(".sandwich").click(function()
+			{
+				$('#back-font').fadeIn(300);
+				var iddiv = $(this).attr("iddiv");
+				$('#'+iddiv).fadeIn(10);
+				$('#back-font').attr('opendiv',iddiv);
+				return false;
+			});
+
+			$('#back-font').click(function()
+			{
+				var iddiv = $("#back-font").attr('opendiv');
+				$('#back-font').fadeOut(600);
+				$('#'+iddiv).fadeOut(600);
+			});
+
+		});
+
+		$(document).ready(function(){
+			$('#menu').click(function(){
+				$(this).toggleClass('active');
+			});
+		});
+
+	</script>
+</body>
+</html>

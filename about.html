@@ -50,7 +50,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="blog.html">
 							<span class="menu__item-name">Блог</span> <span class="menu__item-label">Read our mission statement</span>
 						</a>
 					</li>
@@ -153,7 +153,6 @@
 	<!-- <script src="js/script.js"></script> -->
 	<script type="text/javascript">
 		$(document).ready(function(){
-
 			$(".sandwich").click(function()
 			{
 				$('#back-font').fadeIn(300);
@@ -162,22 +161,18 @@
 				$('#back-font').attr('opendiv',iddiv);
 				return false;
 			});
-
 			$('#back-font').click(function()
 			{
 				var iddiv = $("#back-font").attr('opendiv');
 				$('#back-font').fadeOut(600);
 				$('#'+iddiv).fadeOut(600);
 			});
-
 		});
-
 		$(document).ready(function(){
 			$('#menu').click(function(){
 				$(this).toggleClass('active');
 			});
 		});
-
 	</script>
 </body>
 </html>

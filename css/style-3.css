@@ -809,6 +809,7 @@ div.parall-1 {
 }
 .about-footer {
   min-height: 210px;
+  padding: 50px 0;
   margin: 0 0 42px;
   background: url(../img/footer-bg.jpg);
   background-size: cover;
@@ -851,6 +852,7 @@ div.parall-1 {
 }
 .about-footer input {
   margin: 5% 0 0;
+  width: 220px;
 }
 .footer-logo-link:before {
   display: none!important;
@@ -1247,7 +1249,6 @@ div.parall-1 {
   }
   .about-footer-wrapper> a, .about-footer-wrapper> div {
     width: 80%;
-
   }
 }
 @media screen and (max-width: 480px) {

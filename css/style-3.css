@@ -808,7 +808,6 @@ div.parall-1 {
  display: inline-block;
 }
 .about-footer {
-  min-height: 210px;
   padding: 50px 0;
   margin: 0 0 42px;
   background: url(../img/footer-bg.jpg);
@@ -852,7 +851,7 @@ div.parall-1 {
 }
 .about-footer input {
   margin: 5% 0 0;
-  width: 220px;
+  width: 180px;
 }
 .footer-logo-link:before {
   display: none!important;

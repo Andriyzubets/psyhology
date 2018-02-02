@@ -751,18 +751,30 @@ div.parall-1 {
 .header-about .header-links {
   margin: 0;
 }
+
 .about-main .wrapper {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
-      display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
+
 .about-main h2 {
   font-family: 'GothamProBold', sans-serif;
   color: #292929;
   font-size: 36px;
   margin: 95px 0 90px;
+}
+.about-main h2:before {
+  content: "О КОМПАНИИ";
+  position: absolute;
+  /* display: block; */
+  font-size: 12px;
+  font-family: 'GothamPro', sans-serif;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  left: 5%;
 }
 .about-main p {
   color: #666666;
@@ -1261,7 +1273,7 @@ div.parall-1 {
   #footer .feedback a {
     margin: 10px 0 0;
   }
-   .about-item {
+  .about-item {
     width: 80%;
   }
   .about-footer-wrapper> a, .about-footer-wrapper> div {

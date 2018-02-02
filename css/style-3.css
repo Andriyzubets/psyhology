@@ -757,15 +757,25 @@ div.parallax {
   a.hashtag {
     width: 55%;
   }
+  #friend .content {
+    width: 70%;
+  }
   #friend p {
     margin: 30px 0 30px;
-
+    font-size: 22px;
+  }
+  #friend a {
+    margin: 0 auto;
+    width: 100%;
   }
   #individual h3 {
     margin: 40px 0 0 0;
   }
   #individual p {
     margin: 55px 0 40px 10px;
+  }
+  #main-menu li {
+    width: 60%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -916,7 +926,7 @@ div.parallax {
   .sSlider div > p {
     font-size: 1em;
   }
-  #header-links {
+  .header-links {
     width: 60%;
   }
   #main-menu {
@@ -942,7 +952,7 @@ div.parallax {
     margin: 0 auto;
   }
   #page-two .content, #individual .content, #friend .content {
-    margin: 20% auto 0;
+    margin: 0 auto 0;
   }
   .small-text {
     margin: 10px 0 12px;

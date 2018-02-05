@@ -395,9 +395,12 @@ header {
   margin: 0;`
   z-index: 9999;
 }
-.business, .individual, .footer {
+.business, .individual {
   margin: 100px 0 0 0;
 }
+/*.footer {
+  margin: 50px 0 0 0;
+}*/
 .business .content {
   display: flex;
   flex-direction: column;
@@ -506,7 +509,7 @@ a.hashtag {
 .footer {
   background: #262626;
   padding: 67px 0 72px;
-  margin: 3% 0 0 0;
+  /*margin: 3% 0 0 0;*/
   /*height: 80vw;*/
 }
 .footer .content {
@@ -528,7 +531,7 @@ a.hashtag {
   font-family: 'GothamProLight', sans-serif;
   text-align: center;
   width: 100%;
-  margin: 0 0 70px;
+  /*margin: 0 0 70px;*/
 }
 .footer .contacts p, .footer .feedback h4 {
   color: #565656;
@@ -568,7 +571,7 @@ a.hashtag {
   width: 223px;
 }
 .footer .copyright {
-  margin: 95px 0 0 0;
+  /*margin: 95px 0 0 0;*/
   text-align: center;
   color: #a8a8a8;
   font-size: 18px;
@@ -577,7 +580,7 @@ a.hashtag {
 .footer {
   width: 100% !important;
   height: 38rem !important;
-  margin: 0 !important;
+  /*margin: 0 !important;*/
 }
 a.scroll-down-btn {
   position: absolute;
@@ -940,7 +943,7 @@ div.parall-1 {
   }
   .footer {
     width: 100% !important;
-    height: 30rem !important;
+    /*height: 30rem !important;*/
     /*margin: 5vw 0 0 !important;*/
   }
   .footer .content {
@@ -1049,16 +1052,18 @@ div.parall-1 {
   }
   .header-section .content {
     flex-direction: column;
+        justify-content: center;
   }
   .header-section h2 {
     font-size: 30px;
   }
   .border-slide {
     width: 40%;
+    margin: 135px 0 0;
   }
   .title-slide {
     width: 90%;
-    margin: 3% auto 0;
+    margin: 3% auto 25%;
     text-align: center;
   }
   .sSlider div > p {
@@ -1069,6 +1074,9 @@ div.parall-1 {
   .title-slide a {
     font-size: 1.5em;
     margin: 0 auto;
+  }
+  .title-slide p {
+    margin: 40px 0 30px;
   }
   .facebook-up, .instagram-up, .twitter-up {
     display: none;
@@ -1115,7 +1123,7 @@ div.parall-1 {
     font-size: 16px;
   }
   .individual h3 {
-
+    text-align: center;
     font-size: 30px;
   }
   .scene, .parallax, .canvas {
@@ -1235,7 +1243,7 @@ div.parall-1 {
     text-align: center;
   }
   .individual .content {
-    margin: 50% auto 0;
+    /*margin: 50% auto 0;*/
   }
   .individual h3 {
     margin: 10% 0 0;
@@ -1313,7 +1321,7 @@ div.parall-1 {
     margin: 2% 0 2.5% 15%;
   }
   .business .content {
-    margin: 100% auto;
+    /*margin: 100% auto;*/
   }
   .footer .feedback a {
     margin: 10px 0 0;

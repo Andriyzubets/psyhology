@@ -86,3 +86,8 @@ $(document).mousemove(function(e) {
 });
 
 
+$(document).ready(function () {
+  $("div#blogItem:eq(0)").fadeTo("fast", 1, function () {
+    $(this).next().fadeTo("fast", 1, arguments.callee);
+  });
+});

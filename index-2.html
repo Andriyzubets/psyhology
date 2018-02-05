@@ -227,11 +227,11 @@
             {
                 $('#back-font').fadeIn(300);
                 var iddiv = $(this).attr("iddiv");
-                $('#'+iddiv).fadeIn(10);
+                $('#'+iddiv).fadeIn(200);
                 $('#back-font').attr('opendiv',iddiv);
                 return false;
             });
-
+            
             $('#back-font').click(function()
             {
                 var iddiv = $("#back-font").attr('opendiv');

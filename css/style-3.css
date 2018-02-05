@@ -454,9 +454,12 @@ header {
     height: 31rem;
     background: url(../img/psy-blur.jpg) no-repeat;
     background-size: cover;
+    z-index: 1;
   }
   .individual .title {
     width: 58%;
+    z-index: 1;
+    
   }
   a.hashtag {
     position: relative;
@@ -675,7 +678,7 @@ header {
   div.parall-1 {
    position: absolute;
    width: 40%;
-   height: 31rem;
+   height: 35rem;
    background: url(../img/buis-blur.jpg) no-repeat;
    background-size: cover;
    z-index: 0;
@@ -976,7 +979,7 @@ header {
       font-size: 36px;
     }
     .scene {
-      top: 0%;
+      /*top: 0%;*/
       left: 55%;
     }
     .page-two p{
@@ -988,7 +991,7 @@ header {
     div.parall-1 {
       width: 35%;
       left: 5%;
-      top: 20%;
+      /*top: 20%;*/
       height: 25rem;
     }
     .business h3, .individual h3 {
@@ -1191,6 +1194,9 @@ header {
       text-align: center;
     }
     .viewport-slider-paginator {
+      display: none;
+    }
+    div.parall-1 {
       display: none;
     }
   }

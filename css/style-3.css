@@ -103,7 +103,7 @@ header {
 #menu span, #menu span:before, #menu span:after {
   transition: all 500ms ease-in-out;
 }
-#menu.active span {
+/*#menu.active span {
   background-color: transparent;
 }
 #menu.active span:before, #menu.active span:after {
@@ -114,7 +114,7 @@ header {
 }
 #menu.active span:after {
   transform: rotate(-45deg);
-}
+}*/
 #main-menu {
  position: absolute;
  width: 92%;
@@ -1335,4 +1335,7 @@ header {
       width: 100%;
 
     }
+    #back-font {
+    right: 10%;
+  }
   }

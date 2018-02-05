@@ -39,15 +39,15 @@ body {
     letter-spacing: -1px;
 }
 
-.slide img {
+/*.slide img {
     max-height: 80%;
     border: 1px solid #ccc;
     border-radius: 3px;
     -webkit-box-shadow: 0 0 8px #000;
-}
+}*/
 
 .picture {
-    background-color: #282828;
+    /*background-color: #282828;*/
 }
 
 .picture p {
@@ -82,9 +82,9 @@ hr {
 }
 
 .cover {
-    background-color: #00fada;
+    /*background-color: #00fada;*/
 }
 
 .credits {
-    background-color: #f2f2f2;
+    /*background-color: #f2f2f2;*/
 }

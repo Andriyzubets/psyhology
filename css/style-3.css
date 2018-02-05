@@ -114,20 +114,20 @@ header {
 }
 #menu.active span:after {
   transform: rotate(-45deg);
-}*/
-#main-menu {
- position: absolute;
- width: 92%;
- height: 92vh;
- left: 4%;
- top: 4vh;
- background: #fff;
- box-shadow: 0 0 10px #ff93af;
- z-index: 100;
- display: none;
- padding: 5% 0 0 5%;
-}
-#main-menu a {
+  }*/
+  #main-menu {
+   position: absolute;
+   width: 92%;
+   height: 92vh;
+   left: 4%;
+   top: 4vh;
+   background: #fff;
+   box-shadow: 0 0 10px #ff93af;
+   z-index: 100;
+   display: none;
+   padding: 5% 0 0 5%;
+ }
+ #main-menu a {
   text-decoration: none;
   color: #b7b7b7;
   font-size: 16px;
@@ -387,7 +387,9 @@ header {
   font-family: 'GothamProLight', sans-serif;
   margin: 65px 0 0 0;
 }
-
+.page-two a {
+  width: 40%;
+}
 /* 3 page */
 
 .individual .title  a {
@@ -579,7 +581,7 @@ header {
   .footer {
     width: 100% !important;
     height: 38rem !important;
-    /*margin: 0 !important;*/
+    /*margin: 10% 0 0;*/
   }
   a.scroll-down-btn {
     position: absolute;
@@ -683,11 +685,11 @@ header {
  }
  .scene  {
   position: absolute;
-  top: 0%;
+  top: 20%;
   left: 50%;
   z-index: -2;
-  width: 50% !important;
-  height: 50vh !important;
+  width: 70% !important;
+  height: 70vh !important;
 }
 .scene--left  {
   width: 100vmin;
@@ -1097,7 +1099,7 @@ header {
       display: none !important;
     }
     .business .content {
-      margin: 40% auto 0;
+      /*margin: 40% auto 0;*/
       word-break: break-word;
 
     }
@@ -1316,6 +1318,12 @@ header {
     .about-footer-wrapper> a, .about-footer-wrapper> div {
       width: 80%;
     }
+    header {
+      background: #fff;
+    }
+    .title-slide, .page-two h3 {
+      margin: 25% auto 0;
+    }
   }
   @media screen and (max-width: 480px) {
     #main-menu li {
@@ -1336,9 +1344,9 @@ header {
 
     }
     #back-font {
-    right: 10%;
-  }
-  .header-section .content {
-    padding: 50px 0 0 0;
-  }
+      right: 10%;
+    }
+    .header-section .content {
+      padding: 50px 0 0 0;
+    }
   }

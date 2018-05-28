@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Академия успешной жизни</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jQuery.sSlider.min.css">
     <link rel="stylesheet" href="css/viewport-slider.css">
     <link rel="stylesheet" href="css/demo.css" type="text/css">
     <link rel="stylesheet" href="css/style-3.css">
@@ -28,7 +29,7 @@
 
                 <a href="" iddiv="main-menu" id="menu" class="sandwich" >
                     <span></span>
-                    
+
                 </a>
                 <ul id="main-menu">
                     <li class="title">
@@ -76,92 +77,106 @@
     </header>
     <div id="container" class="viewport-slider-container">
         <section class="slide viewport-slide cover  header-section" data-label="01">
-         <div class="content">
-            <div class="border-slide">
-                <img src="img/slider-img-1.png"/>
+            <div id="mySlider">
+                <div class="content">
+                    <div class="border-slide">
+                        <img src="img/slider-img-1.png"/>
+                    </div>
+                    <div class="title-slide">
+                        <h2>ЛИЧНАЯ КОНСУЛЬТАЦИЯ</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                        <a href="">
+                            Подробнее   <span>&#8250;</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="border-slide">
+                        <img src="img/slider-img-1.png"/>
+                    </div>
+                    <div class="title-slide">
+                        <h2>ЛИЧНАЯ КОНСУЛЬТАЦИЯ</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                        <a href="">
+                            Подробнее   <span>&#8250;</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="title-slide">
-                <h2>ЛИЧНАЯ КОНСУЛЬТАЦИЯ</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                <a href="">
-                    Подробнее   <span>&#8250;</span>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="slide viewport-slide picture page-two" data-label="02">
-        <div class="content">
-            <h3>
-                Меняю <br> жизни по заказу
-            </h3>
-            <span class="small-text">
-                уникальная авторская программа по методике Елены Зубко.
-            </span>
-            <p>
-                Уникальность программы в том, что в ней комплексно, шаг за шагом, прорабатываются 10 направлений жизни.
-            </p>
-            <p>
-                Индивидуальная глубинная проработка и плавная трансформация позволяют получать устойчивые результаты в комфортном для вас темпе.
-            </p>
-            <p>
-                Совершенно новый подход, не нужно "ломать" себя, мир начнёт раскрываться перед вами!
-            </p>
-            <a href="">
-                открыть для себя больше
-            </a>
-            <canvas class="scene scene--full" id="scene"></canvas>
-        </div>
-    </section>
-    <section class="slide credits viewport-slide business" data-label="03">
-        <div class="content">
-            <div id="canvas-wrapper">
-                <canvas id="demo-canvas"></canvas>
-            </div>
-            <div class="parall-1 left-sheet-1"></div>
-            <h3>
-                РАБОТА С БИЗНЕСОМ
-            </h3>
-            <p>
-                Помощь HR-отделу
-                <br>
-                Обучение сотрудников
-                <br>
-                Коммуникационные задачи
+        </section>
+        <section class="slide viewport-slide picture page-two" data-label="02">
+            <div class="content">
+                <h3>
+                    Меняю <br> жизни по заказу
+                </h3>
+                <span class="small-text">
+                    уникальная авторская программа по методике Елены Зубко.
+                </span>
+                <p>
+                    Уникальность программы в том, что в ней комплексно, шаг за шагом, прорабатываются 10 направлений жизни.
+                </p>
+                <p>
+                    Индивидуальная глубинная проработка и плавная трансформация позволяют получать устойчивые результаты в комфортном для вас темпе.
+                </p>
+                <p>
+                    Совершенно новый подход, не нужно "ломать" себя, мир начнёт раскрываться перед вами!
+                </p>
                 <a href="">
                     открыть для себя больше
                 </a>
-            </p>
-        </div>
-    </section>
-    <section class="slide viewport-slide cover individual" data-label="04">
-        <div class="content">
-            <div id="canvas-wrapper">
-                <canvas id="demo-canvas"></canvas>
+                <canvas class="scene scene--full" id="scene"></canvas>
             </div>
-
-            <div class="photo">
-                <a href="" class="hashtag">@psycholog</a>
-            </div>
-            <div class="title">
+        </section>
+        <section class="slide credits viewport-slide business" data-label="03">
+            <div class="content">
+                <div id="canvas-wrapper">
+                    <canvas id="demo-canvas"></canvas>
+                </div>
+                <div class="parall-1 left-sheet-1"></div>
                 <h3>
-                    Индивидуальная консультация
+                    РАБОТА С БИЗНЕСОМ
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velidolore eu fugiat nulla paria Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velidolore eu fugiat nulla paria
+                    Помощь HR-отделу
+                    <br>
+                    Обучение сотрудников
+                    <br>
+                    Коммуникационные задачи
+                    <a href="">
+                        открыть для себя больше
+                    </a>
                 </p>
-                <a class href="">
-                    открыть для себя больше
-                </a>
             </div>
-        </div>
-    </section>
-    <section class="slide viewport-slide cover friend" data-label="05">
-        <div class="content">
-            <div id="canvas-wrapper">
-                <canvas id="demo-canvas"></canvas>
+        </section>
+        <section class="slide viewport-slide cover individual" data-label="04">
+            <div class="content">
+                <div id="canvas-wrapper">
+                    <canvas id="demo-canvas"></canvas>
+                </div>
+
+                <div class="photo">
+                    <a href="" class="hashtag">@psycholog</a>
+                </div>
+                <div class="title">
+                    <h3>
+                        Индивидуальная консультация
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velidolore eu fugiat nulla paria Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velidolore eu fugiat nulla paria
+                    </p>
+                    <a class href="">
+                        открыть для себя больше
+                    </a>
+                </div>
             </div>
-                    <div class="left-sheet"></div>
-                    <div class="right-sheet"></div>
+        </section>
+        <section class="slide viewport-slide cover friend" data-label="05">
+            <div class="content">
+                <div id="canvas-wrapper">
+                    <canvas id="demo-canvas"></canvas>
+                </div>
+                <div class="left-sheet"></div>
+                <div class="right-sheet"></div>
                 <h4>
                     ПРИВЕТ, ДРУГ!
                 </h4>
@@ -238,6 +253,7 @@
     <script src="js/rAF.js"></script>
     <script src="js/demo-1.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/jQuery.sSlider.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
 
@@ -249,7 +265,7 @@
                 $('#back-font').attr('opendiv',iddiv);
                 return false;
             });
-            
+
             $('#back-font').click(function()
             {
                 var iddiv = $("#back-font").attr('opendiv');
@@ -262,6 +278,14 @@
         $(document).ready(function(){
             $('#menu').click(function(){
                 $(this).toggleClass('active');
+            });
+        });
+
+        $(document).ready(function(){
+            $('#mySlider').sSlider({
+                'nav': true,
+                'speed': 7000,
+                'fixedSize': { 'width': '100%', 'height': '450px' }
             });
         });
 

@@ -110,10 +110,12 @@
 	max-width:20%;
 	height:5px;
 	position:absolute;
-	top: 83%;
-	left: 48.5%;
-	background-color:rgba(115,115,115,.6)
+	bottom: 100px;
+	right: 100px;
+	background-color:rgba(115,115,115,.6);
+
 }
+
 /*.sSlider .prgBar:before {
 	content: "";
 	position: relative;
